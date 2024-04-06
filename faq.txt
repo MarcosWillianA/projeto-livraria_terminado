@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>Perguntas - FAQ</title>
+    <style>
+        .questao input:checked~.answer {
+            display: block
+        }
+        
+        .questao {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0
+        }
+        
+        .questao input,
+        .questao .answer {
+            display: none
+        }
+        
+        .questao label {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            width: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div class='questao'>
+        <input type='checkbox' id='questao-1'>
+        <label for='questao-1'>Primeira pergunta?</label>
+        <div class='answer'>Primeira resposta. </div>
+    </div>
+    <div class='questao'>
+        <input type='checkbox' id='questao-2'><label for='questao-2'>Segunda pergunta?</label>
+        <div class='answer'>Segunda resposta. </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
+    <title>Clube de Leitura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Menu -->
+    <nav>
+        <div id="menu">
+            <ul id="lista-menu">
+                <li class="itens-menu"><a href="#titulo-artigo2">O clube</a></li>
+                <li class="itens-menu"><a href="#artigo1">Box do Mês</a></li>
+                <li class="itens-menu"><a href="#artigo3">Como Funciona</a></li>
+                <li class="itens-menu"><a href="#titulo-artigo5">Dúvidas</a></li>
+            </ul>
+        </div>
+        <div id="botoes">
+            <input type="button" value="login" id="login" onclick="document.location='conta.html'">
+            <input type="button" value="cadastre-se" id="cadastro" onclick="document.location='planos.html'">
+        </div>
+    </nav>
+
+    <!--- Cabeçalho -->
+    <header>
+        <div id="titulo">
+            <h1 id="titulo-cabecalho">Os grandes clássicos da literatura em edições para ficar na memória.</h1>
+            <input type="button" value="Assinatura" id="assinatura" onclick="document.location='planos.html'">
+        </div>
+        <div id="foto-livros">
+            <picture>
+                <img src="img/pilha-de-livros1.png" alt="pilha de livros" style="width: 920px; height: 640px;">
+            </picture>
+        </div>
+    </header>
+
+    <!--- Seção principal -->
+    <section>
+        <!-- Primeiro artigo: descrição do livro do mês -->
+        <article id="artigo1">
+            <div id="foto-livro-do-mes">
+                <picture>
+                    <img src="img/beautiful-cover-marrom.png" alt="livro de capa marrom">
+                </picture>
+            </div>
+            <div id="descricao-livro-do-mes">
+                <h2 class="subtitulo-artigo1">BOX DO MÊS</h2>
+                <h1 id="titulo-artigo1">Beautiful Still Fulano de Tal</em> </h1>
+                <h2 class="subtitulo-artigo1">Um livro excelente, escrito pelo autor Fulano de Tal - Mestre do Romance </h2>
+                <p class="paragrafo-artigo1"> Beautiful Still se passa em uma pequena cidade interiorana da Inglaterra, a jovem lady Catherine se vê dividida entre o amor de dois cavalheiros distintos: o charmoso e enigmático conde Henry e o humilde e dedicado jardineiro Thomas. Confrontada por segredos de família e intrigas sociais, Catherine terá que escolher entre o dever e a paixão, em um emocionante e tumultuado triângulo amoroso do século XIX.</p>
+                <p class="paragrafo-artigo1">Dui ut ornare lectus sit amet est placerat. Morbi tincidunt ornare massa eget egestas. Amet cursus sit amet dictum sit amet. Sit amet venenatis urna cursus eget nunc. Dictum varius duis at consectetur lorem donec. <input type="button" value="garanta o livro" id="garantir" onclick="document.location='planos.html'"></p>
+            </div>
+        </article>
+
+        <!---Segundo artigo: auto promoção-->
+        <article id="artigo2">
+            <h1 id="titulo-artigo2">O melhor clube de assinatura de livros do Brasil</h1>
+            <div id="caixa-meio">
+                <div id="texto-esquerdo-a2">
+                    <p class="paragrafo-a2">Somos um clube de livros dedicado aos clássicos. Nossos assinantes recebem, todos os meses, um box com um clássico da literatura e brindes.</p>
+                </div>
+                <div id="texto-direito-a2">
+                    <p class="paragrafo-a2">Ao adquirir nosso box do mês, você se tornará membro do clube, unindo-se a outros milhares de amantes dos clássicos. </p>
+                </div>
+            </div>
+            <div id="botao-a2">
+                <input type="button" value="faça parte do clube" id="facaparte" onclick="document.location='planos.html'">
+            </div>
+        </article>
+        <!--- Terceiro artigo: como funciona o clube -->
+        <article id="artigo3">
+            <h1 id="titulo-artigo3"> COMO FUNCIONA O CLUBE DE ASSINATURA</h1>
+            <div id="caixa-meio-a3">
+                <div id="caixa-esquerda-a3">
+                    <h2 class="subtitulo-a3">FAÇA SUA ASSINATURA</h2><br>
+                    <p class="paragrafo-a3"><strong>Escolha seu plano</strong>, informe seus dados e selecione um meio de pagamento.</p>
+                </div>
+                <div id="caixa-centro-a3">
+                    <h2 class="subtitulo-a3">RECEBA SEU BOX</h2>
+                    <p class="paragrafo-a3">O box anunciado sempre é <strong>entregue no mês seguinte</strong>ao da assinatura.</p>
+                </div>
+                <div id="caixa-direita-a3">
+                    <h2 class="subtitulo-a3">MONTE SUA BIBLIOTECA</h2>
+                    <p class="paragrafo-a3">Receba um <strong>novo box a cada mês</strong>e monte sua biblioteca de clássicos.</p>
+                </div>
+            </div>
+            <div id="botao-a3">
+                <input type="button" value="escolha seu plano" id="escolhaplano" onclick="document.location='planos.html'">
+            </div>
+        </article>
+        <!--Quarto artigo: formulário do catálogo-->
+        <article id="artigo4">
+            <form>
+                <label>NOME COMPLETO</label><br>
+                    <input type="text" placeholder="Digite seu nome" class="txt4"><br>
+                <label>EMAIL</label><br>
+                    <input type="email" placeholder="Digite seu email" class="txt4"><br>        
+            </form>
+            <p id="erro-no-cadastro"></p>
+            <div id="botao-a4">
+                <input type="button" value="Receber Catálogo" id="receber-catalogo" onclick="catalogo()">
+            </div>
+            <p id="paragrafo-a4">Insira seus dados no formulário acima e receba um catálogo completo por e-mail, com informações sobre os clássicos, as traduções, as versões bilíngues e os brindes de cada box.</p>
+        </article>
+        <!---Quinto artigo: dúvidas frequentes-->
+        
+        <article id="artigo5">
+            <h1 id="titulo-artigo5">Dúvidas Frequentes</h1>
+            <div class="duvidas">
+                <input type="checkbox" id="pergunta1">
+                <label for="pergunta1">Como funciona nosso clube?</label>
+                <div class="resposta">Somos um clube de livros por assinatura. Entregamos na casa de nossos membros, mês a mês, um box com obras selecionadas e editadas exclusivamente pelo Clube. Cada box contém um clássico da literatura acompanhado de brindes exclusivos, que podem ser itens como marca-páginas, retratos dos autores, cadernetas, ou um segundo livro menor. Tudo isso relacionado ao tema do clássico de cada mês.</div>
+            </div>
+            <div class="duvidas2">
+                <input type="checkbox" id="pergunta2">
+                <label for="pergunta2">Ficarei sabendo qual é o box do mês antes de recebê-lo?</label>
+                <div class="resposta2">A obra clássica de cada mês é revelada em nossas redes sociais no início do mês correspondente. Ou seja, você fica sabendo, no mês anterior ao do recebimento, todo o conteúdo do seu box. Fique sempre atento às nossas redes sociais! </div>
+            </div>
+            <div class="duvidas3">
+                <input type="checkbox" id="pergunta3">
+                <label for="pergunta3">Quais são os planos disponíveis?</label>
+                <div class="resposta3">Plano mensal: o membro do clube adquire uma assinatura mensal com renovação automática, recebendo o nosso box completo. Essa modalidade de assinatura é renovada mensalmente. </div>
+            </div>
+            <div class="duvidas4">
+                <input type="checkbox" id="pergunta4">
+                <label for="pergunta4">Posso adquirir as edições anteriores?</label>
+                <div class="resposta4">Sim. Os assinantes do Plano Mecenas e os membros do Planos Mensal com seis meses consecutivos de assinatura confirmada têm acesso à Loja do Clube, onde são disponibilizadas as edições de meses anteriores e produtos exclusivos.  </div>
+            </div>
+            <div class="duvidas5">
+                <input type="checkbox" id="pergunta5">
+                <label for="pergunta5">Quando receberei o box?</label>
+                <div class="resposta5">O box é enviado para a sua casa até o dia 15 do mês seguinte ao qual foi realizada a assinatura. O tempo médio de entrega, quando seu box chega na transportadora, é de dez dias, podendo haver maior demora nas entregas para as regiões Centro-Oeste, Norte e Nordeste. </div>
+            </div>
+            <div class="duvidas6">
+                <input type="checkbox" id="pergunta6">
+                <label for="pergunta6">A assinatura é renovada automaticamente?</label>
+                <div class="resposta6">Sim, com data marcada para o mesmo dia em que você realizou a primeira compra. Pelo cartão de crédito, a cobrança é automática. Se a opção de pagamento escolhida for o boleto bancário, um novo será encaminhado automaticamente para o seu e-mail alguns dias antes do vencimento/renovação da assinatura. </div>
+            </div>
+        </article>
+        <!--- Rodapé da página---->
+        <footer>
+            <div id="icones-rodape">
+                <img src="img/favicon.ico.png" id="icone-do-site-no-rodape" alt="Símbolo do Site">
+                <h1 class="titulo-rodape">Clube de Literatura</h1>
+                <p id="paragrafo-rodape">Os maiores clássicos da literatura todos os meses na sua casa.</p>
+                <p>
+                    <a href=#><img src="img/facebook-icone.png" class="iconerodape" alt="Facebook"></a>
+                    <a href=#><img src="img/instagram-icone.png" class="iconerodape" alt="Instagram"></a>
+                    <a href=#><img src="img/youtube-icone.png" class="iconerodape" alt="Youtube"></a>
+                    <a href=#><img src="img/twitter-icone.png" class="iconerodape" alt="Twitter"></a>
+                    <a href=#><img src="img/tiktok-icone.png" class="iconerodape" alt="Tik Tok"></a>
+                </p>
+            </div>
+            <div id="contato-rodape">
+                <h1 class="titulo-rodape">Contato</h1><br>
+                <address><a href="mailto:clube@leitura.com.br">clube@leitura.com.br</a></address><br>
+                <address>Rua dos Bobos, 0, Porto Velho, Rondônia.<br>CEP 123456-789</address>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

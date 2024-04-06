@@ -1,0 +1,109 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+} 
+   
+header {
+    height: 80px;
+}
+
+article {
+    border: solid 1px blue;
+    background-color: linen;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    padding: 60px 10px 40px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+   
+h2 {
+    color: maroon;
+    text-align: center;
+    margin: 10px 30px;
+}  
+
+h1 {
+    color: chocolate;
+    text-align: center;
+    margin: 10px 30px;
+}
+   
+p {
+    margin: 10px 30px;
+    font-size: 10pt;
+}
+
+.caixatxt {
+    border: solid 1px burlywood;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    margin: 10px 30px;
+}   
+   
+#login {
+    border: hidden;
+    border-radius: 5px;
+    background-color: maroon;
+    color: white;
+    width: 400px;
+    height: 30px;
+    margin: 10px 30px;
+}   
+   
+   
+   
+   
+   
+   
+   /*Rodapé*/
+
+   footer {
+    height: 400px;
+    display: flex;
+    text-align: center;
+}
+
+#icones-rodape {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+
+#icone-do-site-no-rodape {
+    width: 60px;
+    height: 60px;
+}
+
+.iconerodape {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+}
+
+#contato-rodape {
+    text-align: left; 
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+
+.titulo-rodape {
+    font: normal 18pt Times
+}
+
+#paragrafo-rodape {
+    font: normal 12pt Verdana;
+}
+
+address {
+    font: normal 12pt Verdana;
+}
+
+address a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,87 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    padding: 20px 0 0 0;
+    background-color: saddlebrown;
+    text-align: center;
+    font: normal 24pt Verdana;
+}
+
+nav a{
+    text-decoration: none;
+    color: bisque;
+}
+
+article {
+    border-radius: 10px;
+    background-color: linen;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font: normal 24pt Times;
+}
+
+#livrodomes {
+    width: 120px;
+    height: 180px;
+    margin: 0 120px;
+}
+
+p {
+    text-align: center;
+    font: normal 12pt Verdana;
+}
+
+h2 {
+    text-align: center;
+    font: normal 18pt Times;
+}
+
+span {
+    color: lightgray;
+}
+
+#assinar {
+    width: 250px;
+    height: 60px;
+    border-radius: 25px;
+    border: solid 5px maroon;
+    color: maroon;
+    margin: 0 70px;
+    text-align: center;
+    font: normal 10pt Verdana;
+    text-transform: uppercase;
+}
+
+#assinar:hover {
+    background-color: maroon;
+    color: white;
+}
+
+#reativar {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    
+}
+
+#link-reativar:link {
+    text-decoration: none;
+    color: black;
+}
+
+#link-reativar:hover {
+    color: maroon;
+}
